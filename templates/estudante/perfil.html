@@ -1,0 +1,13 @@
+<h1>Vagas disponíveis</h1>
+
+{% for vaga in vagas %}
+
+<h3>{{vaga[2]}}</h3>
+
+<p>{{vaga[3]}}</p>
+
+<a href="/candidatar/{{vaga[0]}}">
+<button>Candidatar-se</button>
+</a>
+
+{% endfor %}

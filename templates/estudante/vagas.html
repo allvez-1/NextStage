@@ -1,0 +1,17 @@
+<h2>Vagas Disponíveis</h2>
+
+{% for vaga in vagas %}
+
+<hr>
+
+<h3>{{vaga[2]}}</h3>
+
+<p><b>Empresa:</b> {{vaga[1]}}</p>
+
+<p><b>Descrição:</b> {{vaga[3]}}</p>
+
+<p><b>Requisitos:</b> {{vaga[4]}}</p>
+
+<p><b>Prazo:</b> {{vaga[5]}}</p>
+
+<a href="/candidatar/{{vaga[0]}}">Candidatar-se</a>
