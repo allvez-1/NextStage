@@ -1,25 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-<title>NextStage</title>
-<link rel="stylesheet" href="/static/css/style.css">
+    <meta charset="UTF-8">
+    <title>Nextage</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
 </head>
 
 <body>
 
-<header>
+    <header>
+        <h1>Nextage</h1>
 
-<h1>NextStage</h1>
+        <nav>
+            <a href="/">Vagas</a>
+            <a href="/cadastrar/">Cadastrar vaga</a>
+        </nav>
 
-<nav>
+        <hr>
+    </header>
 
-<a href="/">Inicio</a>
-<a href="/login">Login</a>
-<a href="/cadastro">Cadastro</a>
 
-</nav>
+    <main>
 
-</header>
+        {% block content %}
+        {% endblock %}
+
+    </main>
+
+
+    <footer>
+
+        <hr>
+        <p>Sistema de Estágios - Projeto Acadêmico</p>
+
+    </footer>
+
 </body>
+
 </html>
